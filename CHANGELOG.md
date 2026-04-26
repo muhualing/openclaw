@@ -63,6 +63,7 @@ Docs: https://docs.openclaw.ai
 
 ### Fixes
 
+- CLI backends: compact OpenClaw transcripts after over-budget CLI turns and reseed fresh CLI sessions from the compacted transcript instead of stale external resume state. Fixes #68329. Thanks @jacko2bot.
 - ACP: send subagent and async-task completion wakes to external ACP harnesses as
   plain prompts instead of OpenClaw internal runtime-context envelopes, while
   keeping those envelopes out of ACP transcripts.
